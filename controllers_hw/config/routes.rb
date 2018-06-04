@@ -1,3 +1,20 @@
 Rails.application.routes.draw do
+  get 'icecream/strawberry'
+  get 'icecream/neopolitan'
+  get 'icecream/mintchocochip'
+  get 'icecream/lemon'
+  get 'pizza/pepperoni'
+  get 'pizza/newyork'
+  get 'pizza/vegetarian'
+  get 'pizza/stuffedcrust'
+  get 'muffins/blueberry'
+  get 'muffins/lemon'
+  get 'muffins/raspberry'
+  get 'muffins/chocochip'
+  get 'chocolate/milk'
+  get 'chocolate/dark'
+  get 'chocolate/white'
+  get 'chocolate/orange/:id', to: 'chocolate#orange_you'
+  get 'chocolate/orange'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
